@@ -93,8 +93,8 @@
  * Must choose one of these other than MANUAL if a Z-Probe type is selected.
  */
 //#define TRIPOINT
-//#define LINEAR
-#define BILINEAR
+#define LINEAR
+//#define BILINEAR
 //#define UBL
 //#define MANUAL
 
@@ -155,18 +155,18 @@
 /**
  * TEVO Tarantula Custom PID Settings - Stock Hotend
  */
-#define  hot_Kp 9.84
-#define  hot_Ki 0.50
-#define  hot_Kd 48.17
+#define  hot_Kp 25.65
+#define  hot_Ki 1.76
+#define  hot_Kd 93.50
 // FIND YOUR OWN: "M303 E0 C8 S200" to run autotune on the hotend at 200 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
 /**
  * TEVO Tarantula Custom PID Settings - Stock Heatbed
  */
-#define  bed_Kp 984.88
-#define  bed_Ki 193.91
-#define  bed_Kd 1250.55
+#define  bed_Kp 79.01
+#define  bed_Ki 5.67
+#define  bed_Kd 733.60
 // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
