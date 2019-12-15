@@ -93,8 +93,8 @@
  * Must choose one of these other than MANUAL if a Z-Probe type is selected.
  */
 //#define TRIPOINT
-#define LINEAR
-//#define BILINEAR
+//#define LINEAR
+#define BILINEAR
 //#define UBL
 //#define MANUAL
 
@@ -112,8 +112,7 @@
  * Number of grid points in each direction
  * Minimum 3. Maximum 15 for UBL. Maximum 7 for MANUAL
  */
-#define GRID_POINTS        3
-
+#define GRID_POINTS        5
 /**
  * Margin around perimiter of bed for probing (will not probe outside this margin)
  */
@@ -155,9 +154,9 @@
 /**
  * TEVO Tarantula Custom PID Settings - Stock Hotend
  */
-#define  hot_Kp 25.65
-#define  hot_Ki 1.76
-#define  hot_Kd 93.50
+#define  hot_Kp 23.41
+#define  hot_Ki 1.57
+#define  hot_Kd 87.24
 // FIND YOUR OWN: "M303 E0 C8 S200" to run autotune on the hotend at 200 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
