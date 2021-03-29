@@ -56,7 +56,7 @@
  * (How to center prints: https://github.com/JimBrown/MarlinTarantula/wiki/How-to-center-your-prints-(EasyConfig))
  */
 #define NOZZLE_X          7
-#define NOZZLE_Y          -27
+#define NOZZLE_Y          -23
 
 /**
  * Minimal Z height (in mm) before homing (G28) for Z clearance above the bed, clamps, ...
@@ -103,10 +103,10 @@
  * Use only one of Left/Right and Front/Behind. Others must be 0 (zero)
  * If you have a dual nozzle the offsets are calculated from the primary nozzle (the one plugged in to E0)
  */
-#define SENSOR_LEFT        0
+#define SENSOR_LEFT        6
 #define SENSOR_RIGHT       0
 #define SENSOR_FRONT       0
-#define SENSOR_BEHIND      18
+#define SENSOR_BEHIND      77
 
 /**
  * Number of grid points in each direction
@@ -190,7 +190,7 @@
  *       PLA and ABS will appear under both Custom Command and Prepare.
  */
 #define Hot_PLA     210
-#define Bed_PLA      30
+#define Bed_PLA      50
 
 #define Hot_ABS 		240
 #define Bed_ABS 		100
@@ -1005,14 +1005,14 @@
  *          TMC5130, TMC5130_STANDALONE, TMC5160, TMC5160_STANDALONE
  * :['A4988', 'A5984', 'DRV8825', 'LV8729', 'L6470', 'L6474', 'POWERSTEP01', 'TB6560', 'TB6600', 'TMC2100', 'TMC2130', 'TMC2130_STANDALONE', 'TMC2160', 'TMC2160_STANDALONE', 'TMC2208', 'TMC2208_STANDALONE', 'TMC2209', 'TMC2209_STANDALONE', 'TMC26X', 'TMC26X_STANDALONE', 'TMC2660', 'TMC2660_STANDALONE', 'TMC5130', 'TMC5130_STANDALONE', 'TMC5160', 'TMC5160_STANDALONE']
  */
-#define X_DRIVER_TYPE  TMC2208
-#define Y_DRIVER_TYPE  TMC2208
-#define Z_DRIVER_TYPE  TMC2208
+#define X_DRIVER_TYPE  TMC2208_STANDALONE
+#define Y_DRIVER_TYPE  TMC2208_STANDALONE
+#define Z_DRIVER_TYPE  TMC2208_STANDALONE
 //#define X2_DRIVER_TYPE A4988
 //#define Y2_DRIVER_TYPE A4988
 //#define Z2_DRIVER_TYPE A4988
 //#define Z3_DRIVER_TYPE A4988
-#define E0_DRIVER_TYPE TMC2208
+#define E0_DRIVER_TYPE TMC2208_STANDALONE
 //#define E1_DRIVER_TYPE A4988
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988
